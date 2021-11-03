@@ -10,4 +10,5 @@
         log_cerr=open('/data/log_cerr.txt', 'w')) 
 5.run them with terraform init, terraform apply in code repo
 5.1 i dont recomend you execute dkr-build.tf and dkr-push.tf files if you are not made changes to dockerfile and want to overwrite, if not, files are up to date
+5.2 if you made any changes update the image path in job.tf
 6. run kubectl get pods to see results 
