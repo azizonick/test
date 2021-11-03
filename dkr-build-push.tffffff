@@ -1,0 +1,11 @@
+resource "null_resource" "first" {
+  provisioner "local-exec" {
+    command = "docker build -t azizonick/python-test7:lastest ."
+  }
+}
+
+resource "null_resource" "second" {
+  provisioner "local-exec" {
+    command = "docker push azizonick/python-test7:lastest"
+  }
+}
